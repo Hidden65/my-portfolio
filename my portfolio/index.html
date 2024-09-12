@@ -4,64 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sajid</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/pw/AP1GczOTJ_h30vBhA7kcTI6hKPDp0q07Yma3KZI2LnOvA-v0H6UXfN5LBfRIz6_VRTAuk1t0PngajdeCN_wvzkx3nY47x4uf-Ue2SPUXLXuV6hhPr8kqBvPxkhBvjqxxXUhpqyEc8okChmvqAaPQQ1t48KU=w706-h913-s-no-gm?authuser=0" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'kanit': ['Kanit', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body>
-    <!-- =====================NAVBAR============================ -->
-    <div class="navbar">
-        <div class="logo">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczPkZvPzHksu61_so-GXNZXqNodgLuKl6lrVoO2HzuMydMoabIZrmmyO-5OykJd8eTjVBcxtniT7e9bYrKY7WLrjvp9_GHjYBHAOUoZVnBqGDuxKihLutxoonJE7EsnwXBsf9hNa3mqFS8R22EEsbl4=w421-h272-s-no-gm?authuser=0" alt="Logo"> <!-- Replace "logo.png" with your logo -->
-            <span>Logo</span> <!-- Replace "Logo" with your text logo -->
+<body class="bg-black text-white font-kanit">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-black z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html"><img src="https://lh3.googleusercontent.com/pw/AP1GczPkZvPzHksu61_so-GXNZXqNodgLuKl6lrVoO2HzuMydMoabIZrmmyO-5OykJd8eTjVBcxtniT7e9bYrKY7WLrjvp9_GHjYBHAOUoZVnBqGDuxKihLutxoonJE7EsnwXBsf9hNa3mqFS8R22EEsbl4=w421-h272-s-no-gm?authuser=0" alt="Logo" class="h-10 mr-2"></a>
+            </div>
+            <div class="space-x-4">
+                <a href="index.html" title="About"><span class="material-symbols-outlined">person</span></a>
+        <a href="project.html" title="Projects"><span class="material-symbols-outlined">work</span></a>
+        <a href="certificate.html" title="Certificates"><span class="material-symbols-outlined">school</span></a>
+            </div>
         </div>
-        <div class="nav-links">
-            <a href="index.html">About</a>
-            <a href="project.html">Project</a>
-            <a href="certificate.html">Certificates</a>
-           
+    </nav>
+
+    <!-- About Me -->
+    <section id="about" class="pt-24 pb-16">
+        <div class="container mx-auto px-4">
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczOTJ_h30vBhA7kcTI6hKPDp0q07Yma3KZI2LnOvA-v0H6UXfN5LBfRIz6_VRTAuk1t0PngajdeCN_wvzkx3nY47x4uf-Ue2SPUXLXuV6hhPr8kqBvPxkhBvjqxxXUhpqyEc8okChmvqAaPQQ1t48KU=w706-h913-s-no-gm?authuser=0" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+            <h2 class="text-3xl font-semibold text-center mb-4">About Me</h2>
+            <div class="w-24 h-1 bg-white mx-auto mb-6"></div>
+            <p class="max-w-2xl mx-auto text-center">Hello, I'm Sajid Haque, a self-taught frontend web developer. My journey into web development began during the lockdown when I found myself endlessly surfing the internet. It was during this time that I became captivated by the world of web development. Despite not having access to a computer or laptop, I embarked on my journey by taking online tutorials and coding directly on my phone.</p>
         </div>
-    </div>
-    <!-- =====================NAVBAR============================ -->
-    <!-- =====================ABOUT ME============================ -->
-    <div class="about-me-container">
-        <img class="about-me-img" src="https://lh3.googleusercontent.com/pw/AP1GczOTJ_h30vBhA7kcTI6hKPDp0q07Yma3KZI2LnOvA-v0H6UXfN5LBfRIz6_VRTAuk1t0PngajdeCN_wvzkx3nY47x4uf-Ue2SPUXLXuV6hhPr8kqBvPxkhBvjqxxXUhpqyEc8okChmvqAaPQQ1t48KU=w706-h913-s-no-gm?authuser=0" alt="Profile Picture"> <!-- Replace "profile-pic.jpg" with your image URL -->
-        <div class="about-me-text">
-            <h2>About Me</h2>
-           <CENTer> <hr class="about-me-hr"></CENTer>
-            <p>Hello, I'm Sajid Haque, a self-taught frontend web developer. My journey into web development began during the lockdown when I found myself endlessly surfing the internet. It was during this time that I became captivated by the world of web development. Despite not having access to a computer or laptop, I embarked on my journey by taking online tutorials and coding directly on my phone.</p>
+    </section>
+
+    <!-- Services -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-4">
+            <p class="max-w-2xl mx-auto text-center border border-white p-4">If you're in need of a website for your company, business, or any other venture, I'm here to help bring your vision to life. Additionally, if you're a fellow developer seeking assistance on coding projects, feel free to reach out. Let's work together to turn ideas into reality.</p>
         </div>
-    </div>
-    <!-- =====================ABOUT ME============================ -->
+    </section>
 
-    <div class="contact-form">
-        <h2>Contact Me</h2>
-        <form action="https://api.web3forms.com/submit" method="post" id="contact-form">
-            <input type="hidden" name="access_key" value="61362a4f-5c36-46a2-93d5-1bae079cefa7">
-            <div class="form-group">
-                <input type="text" placeholder="Name" id="name" name="name" required>
+    <!-- Tools -->
+    <section id="tools" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-8">Tools I Use</h2>
+            <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10">
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-12 h-12 mb-2">
+                    <span>HTML5</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-12 h-12 mb-2">
+                    <span>CSS3</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-12 h-12 mb-2">
+                    <span>JavaScript</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="data:image/png;base64,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" alt="Tailwind CSS" class="w-12 h-12 mb-2">
+                    <span>Tailwind</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" class="w-12 h-12 mb-2">
+                    <span>Firebase</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-12 h-12 mb-2">
+                    <span>GitHub</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify" class="w-12 h-12 mb-2">
+                    <span>Netlify</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" class="w-12 h-12 mb-2">
+                    <span>ChatGPT</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="data:image/png;base64,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" alt="Claude AI" class="w-12 h-12 mb-2">
+                    <span>Claude AI</span>
+                </div>
             </div>
-            <div class="form-group">
-               <input type="email" placeholder="Email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-            <textarea id="message" placeholder="Message" name="message" rows="5" required></textarea>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
-    </div>
-    
+        </div>
+    </section>
 
+    <!-- Contact Form -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 max-w-md">
+            <h2 class="text-3xl font-semibold text-center mb-8">Contact Me</h2>
+            <form action="https://api.web3forms.com/submit" method="post" id="contact-form" class="space-y-4">
+                <input type="hidden" name="access_key" value="61362a4f-5c36-46a2-93d5-1bae079cefa7">
+                <input type="text" placeholder="Name" id="name" name="name" required class="w-full p-2 bg-gray-800 border border-gray-700 rounded">
+                <input type="email" placeholder="Email" id="email" name="email" required class="w-full p-2 bg-gray-800 border border-gray-700 rounded">
+                <textarea id="message" placeholder="Message" name="message" rows="5" required class="w-full p-2 bg-gray-800 border border-gray-700 rounded"></textarea>
+                <button type="submit" class="w-full py-2 px-4 bg-black hover:bg-gray-800 text-white border border-white rounded transition duration-300">Submit</button>
+            </form>
+        </div>
+    </section>
 
-    <footer class="footer">
+    <footer class="bg-gray-900 py-4 text-center">
         <p>Designed by Me &copy; 2024</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
 
+        // Navbar animation
+        gsap.from("nav", {
+            y: -100,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out"
+        });
 
-<script src="script.js"></script>    
+        // Sections animation
+        gsap.utils.toArray("section").forEach((section, i) => {
+            gsap.from(section, {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top 80%",
+                    end: "bottom 20%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        });
+
+        // Tools animation
+        gsap.from("#tools .flex", {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            stagger: 0.2,
+            scrollTrigger: {
+                trigger: "#tools",
+                start: "top 80%",
+                end: "bottom 20%",
+                toggleActions: "play none none reverse"
+            }
+        });
+    </script>
 </body>
 </html>
